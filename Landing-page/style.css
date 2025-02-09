@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 40rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("main\ img.jpg");
+  background-size: cover;
+}
+nav {
+  width: 100%;
+  height: 100px;
+
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+}
+.logo {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  position: relative;
+}
+.menu a:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid rgb(179, 255, 0);
+  transition: all 0.3s;
+}
+.menu a:hover:before {
+  width: 80%;
+}
+.login a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 13px;
+  background: orangered;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.login a:hover {
+  background: transparent;
+  border: 1px solid rgb(179, 255, 0);
+}
+.h-txt {
+  max-width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  color: white;
+}
+.h-txt span {
+  letter-spacing: 2px;
+}
+.h-txt h1 {
+  font-size: 2rem;
+}
+.h-txt a {
+  text-decoration: none;
+  background: orangered;
+  color: white;
+  padding: 10px 10px;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.h-txt a:hover {
+  background: transparent;
+  border: 1px solid rgb(179, 255, 0);
+}
